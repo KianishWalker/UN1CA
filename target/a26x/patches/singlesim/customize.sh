@@ -1,0 +1,1 @@
+HEX_PATCH "$WORK_DIR/vendor/bin/secril_config_svc" "40008052" "20008052"
