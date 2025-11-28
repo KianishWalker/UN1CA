@@ -38,3 +38,5 @@ vendor/tee/ffffffff-0000-0000-0000-000000000030 0 0 644 capabilities=0x0
 vendor/tee/tui 0 2000 755 capabilities=0x0
 vendor/tee/tui/resolution_common 0 2000 755 capabilities=0x0
 vendor/tee/tui/resolution_common/ID00000100 0 0 644 capabilities=0x0
+vendor/etc/init/vendor.samsung.rilchip.slsi.rc 0 0 644 capabilities=0x0
+vendor/lib64/libsec-ril.so 0 0 644 capabilities=0x0

@@ -38,3 +38,5 @@
 /vendor/tee/tui u:object_r:tee_file:s0
 /vendor/tee/tui/resolution_common u:object_r:tee_file:s0
 /vendor/tee/tui/resolution_common/ID00000100 u:object_r:tee_file:s0
+/vendor/etc/init/vendor.samsung.rilchip.slsi.rc\.so u:object_r:vendor_file:s0
+/vendor/lib64/libsec-ril\.so u:object_r:vendor_file:s0
