@@ -23,7 +23,7 @@ EVAL "cp -a \"$WORK_DIR/kernel/$BOOT_FILE\" \"$TMP_DIR/$BOOT_FILE\""
 
 MKBOOTIMG_ARGS="$(unpack_bootimg --boot_img "$TMP_DIR/$BOOT_FILE" --out "$TMP_DIR/out" --format mkbootimg 2>&1)"
 
-RAMDISK_FILE="$(find "$TMP_DIR/out" -type f -name "*ramdisk" | head -n 1)"
+RAMDISK_FILE="$(find "$TMP_DIR/out" -type f -regextype posix-extended -regex "*ramdisk+(00)" | head -n 1)"
 if [ ! "$RAMDISK_FILE" ]; then
     ABORT "Failed to extract $BOOT_FILE\n\n$MKBOOTIMG_ARGS"
 fi
